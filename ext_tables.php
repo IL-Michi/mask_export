@@ -8,9 +8,7 @@ call_user_func(function () {
         'tools',
         'mask_export',
         'after:MaskMask',
-        [
-            'Export' => 'list, save, download, install',
-        ],
+        [\IchHabRecht\MaskExport\Controller\ExportController::class => 'list, save, download, install'],
         [
             'access' => 'admin',
             'icon' => 'EXT:mask_export/Resources/Public/Icons/Extension.svg',
